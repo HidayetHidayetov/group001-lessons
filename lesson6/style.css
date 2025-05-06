@@ -1,0 +1,45 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.boxes {
+    background-color: aqua;
+    height: 800px;
+
+    /* justify-content, align-items, gap .... */
+    display: flex;
+    /* flex-direction: column-reverse; */
+    justify-content: space-evenly;  /* bu X oxu uzerinde hereket direction deyisdikde Y oxunu gosterecek*/
+    align-items: center; /* bu Y oxu uzerinde hereket direction deyisdikde X oxunu gosterecek*/
+}
+
+.box1,
+.box2,
+.box3,
+.box4 {
+    width: 200px;
+    height: 200px;
+    text-align: center;
+    line-height: 200px;
+}
+
+.box1 {
+    background-color: yellow;
+}
+
+.box2 {
+    background-color: blue;
+    height: 400px;
+    align-self: flex-end;
+    line-height: 400px;
+}
+
+.box3 {
+    background-color: red;
+}
+
+.box4 {
+    background-color: lime;
+}

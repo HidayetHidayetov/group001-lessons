@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson 3</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <h2 class="basliq" id="css-basliqi">I learn CSS!</h2>
+
+    <h1>Lesson 3</h1>
+
+    <div class="title">Lorem ipsum dolor sit.</div>
+
+    <!-- form 
+    belirle melumatlarin bezi methodlar vasitesi ile gonderilmesi.
+    -->
+    <form autocomplete="on">
+        <h1 class="title">Registration Form - Qeydiyyat Formu</h1>
+
+        <fieldset>
+            <legend>Personal Information</legend>
+            <label for="">Ad</label>
+            <input name="ad" value="Elovset" type="text" placeholder="Adiniz daxil edin..." >
+            
+            <label for="">Soyad</label>
+            <input name="soyad" type="text" placeholder="Soyadinizi daxil edin..." minlength="3" required>
+            
+            <label for="">Email</label>
+            <input name="email" type="email" placeholder="example@gmail.com" maxlength="10">
+            
+            <label for="">Yas</label>
+            <input name="yas" type="number" placeholder="Yas daxil edin...">
+            
+            <label for="man">kisi</label>
+            <input type="radio" name="cinsiyyet" id="man">
+            
+            <label for="women">qadin</label>
+            <input type="radio" name="cinsiyyet" id="women">
+
+            <label for="password">Sifre</label>
+            <input type="password" name="cinsiyyet" >
+        </fieldset>
+
+        <h1>helloo</h1>
+
+        <br><br>
+
+        <fieldset>
+            <legend>Bildiyiniz Proqramlama Dilleri</legend>
+            <label for="html">html</label>
+            <input type="checkbox" name="html" id="html">
+            <label for="css">css</label>
+            <input type="checkbox" name="css" id="css">
+            <label for="js">JS</label>
+            <input type="checkbox" name="js" id="js">
+        </fieldset>
+
+        <br><br>
+        <label for="">Dogum Tarixi</label>
+        <input type="date">
+        <br><br>
+        <label for="">Olkenizi secin</label>
+        <select name="" id="">
+            <option value="">Olke Secin</option>
+            <option value="az">Azerbaijan</option>
+            <option value="ru">Russian</option>
+            <option value="tr">Turkey</option>
+            <option value="ge">German</option>
+        </select>
+        
+        <br><br>
+        <label for="">Mesajiniz</label><br>
+        <textarea autofocus name="" id="" cols="20" rows="3" placeholder="mesaj daxil edin...">Mesaja davam edin: </textarea>
+        
+        <br><br>
+        <label for="">Sekil daxil edin</label>
+        <input type="file" name="" id="">
+        <br><br>
+        <input type="submit" value="Gonder">
+    </form>
+</body>
+
+</html>

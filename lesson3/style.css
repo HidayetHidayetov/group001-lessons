@@ -1,0 +1,37 @@
+
+/* *{
+    color: red;
+} */
+
+/* h1.title{
+    color: lime;
+}
+
+div.title{
+    background-color: aqua;
+    color: red;
+    border: 2px solid black;
+    border-radius: 30px;
+    padding: 20px;
+}
+
+#css-basliqi {
+    color: blue;
+    background-color: bisque;
+    padding: 20px;
+    display: inline-block;
+    margin: 30px;
+}
+
+h2{
+    color: red;
+}
+
+.basliq{
+    color: yellow;
+    background-color: green;
+} */
+
+form h1.title{
+    color: red;
+}

@@ -1,0 +1,36 @@
+@font-face{
+    font-family: MyKgFont;
+    src: url("./fonts/kg_perfect_penmanship/KGPerfectPenmanship.otf");
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: MyKgFont;
+}
+
+body{
+    color: red;
+}
+
+.boxes{
+    width: 400px;
+    height: 200px;
+    color: yellow;
+}
+
+.box{
+    background-color: lime;
+    height: 100px;
+    width: 300px;
+    text-align: center;
+    line-height: 100px;
+
+    color: currentColor;
+
+
+box-shadow: 6px 9px 27px 1px rgba(212, 13, 13, 0.75);
+    -webkit-box-shadow: 6px 9px 27px 1px rgba(212, 13, 13, 0.75);
+    -moz-box-shadow: 6px 9px 27px 1px rgba(212, 13, 13, 0.75);
+}

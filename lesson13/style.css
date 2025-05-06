@@ -1,0 +1,70 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --primary-color: #5ba115;
+}
+
+@property --box-bg-color {
+    syntax: '<color>';
+    /* Deyirik ki, bu dəyişənin dəyəri rəng olacaq */
+    initial-value: blue;
+    /* İlkin dəyəri mavi olsun */
+    inherits: false;
+    /* Uşaqlara keçməsin (bu halda önəmli deyil, amma misal üçün) */
+}
+
+.box {
+    width: 100px;
+    height: 100px;
+    /* 2. @property ilə qeydiyyatdan keçirdiyimiz dəyişəni istifadə edirik */
+    background-color: var(--box-bg-color);
+    transition: --box-bg-color 0.5s ease;
+    /* Dəyişənin dəyəri dəyişəndə 0.5 saniyəlik keçid olsun */
+}
+
+.box:hover {
+    /* 3. Hover olanda dəyişənin dəyərini dəyişirik */
+    --box-bg-color: red;
+    /* Mavi dəyərini qırmızı ilə əvəz edirik */
+}
+
+
+.title{
+    background: var(--primary-color);
+}
+
+
+
+/* max-width - screen (ekran) olcusu 768px olana QEDER title elementim aqua renginde olacaq. */
+/* 
+768px tablet
+425px telefon
+1024 orta laptot
+
+*/
+
+/* Tablet */
+@media (max-width: 768px) {
+    .title {
+        background-color: aqua;
+    }
+
+    .box{
+        background-color: yellow;
+    }
+}
+
+/* Telefon */
+@media (max-width: 425px) {
+    .title {
+        background-color: rgb(255, 0, 0);
+    }
+
+    .box {
+        background-color: rgb(0, 255, 234);
+    }
+}

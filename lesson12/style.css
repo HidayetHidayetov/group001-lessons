@@ -1,0 +1,66 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.box {
+    width: 300px;
+    height: 200px;
+    text-align: center;
+    line-height: 200px;
+    background-color: red;
+    margin: 20px;
+    transition: transform 1s ease;
+    filter: blur(4px); /* bu shekli blurlasdirmaq ucun istifade olunur */
+
+    animation-name: animasiya1;
+    animation-duration: 3s;
+    animation-delay: 1s;
+    /* animation-direction: reverse; */
+    animation-fill-mode: forwards;
+    /* animation-iteration-count: infinite; */
+    /* transition-property: all;
+    transition-duration: 2s;
+    transition-timing-function: ease; */
+}
+
+.box:hover{
+    filter: blur(0);
+}
+
+/* .box:hover{
+    transform: rotate(30deg);
+    height: 300px;
+    background: yellow;
+} */
+
+@keyframes animasiya1 {
+    0% {
+        background-color: red;
+        transform: rotate(0deg);
+    }
+
+    25% {
+        background-color: yellow;
+        transform: rotate(45deg);
+        width: 500px;
+    }
+
+    50% {
+        background-color: blue;
+        transform: rotate(90deg);
+        width: 300px;
+    }
+
+    75% {
+        background-color: pink;
+        transform: rotate(180deg);
+    }
+
+    100% {
+        background-color: pink;
+        transform: rotate(180deg);
+    }
+
+}
