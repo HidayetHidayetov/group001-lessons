@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* .boxes{
+    background-color: aqua;
+    display: flex;
+    gap: 30px;
+    padding: 30px;
+    height: 300px;
+}
+
+.boxes div{
+    width: 100px;
+    background-color: red;
+    text-align: center;
+    line-height: 100px;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+} */
+
+.boxes{
+    background-color: aqua;
+    padding: 30px;
+
+    display: grid;
+    grid-template-columns: auto auto auto 200px ;
+    gap: 20px 50px;
+}
+
+.boxes div {
+    background-color: red;
+    text-align: center;
+    line-height: 100px;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.box1{
+    grid-column: 1 / span 2;
+    grid-row: 1 / span 2;
+}

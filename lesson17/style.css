@@ -1,0 +1,55 @@
+.h-screen{
+    min-height: 100vh;
+}
+
+.bg-right-section{
+    background-color: #f1f1f1;
+}
+
+.fs-30{
+    font-size: 30px;
+}
+
+.left-25{
+    left: 25%;
+}
+
+.divider{
+    background-color: #888888;
+    height: 10px;
+}
+
+.menu a, .menu i{
+    color: black;
+}
+
+.menu a{
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.menu a.active,
+.menu a.active i{
+    color: rgb(10, 219, 132);
+}
+
+.socuial-media i{
+    font-size: 20px;
+}
+
+.socuial-media a{
+    width: 40px;
+    height: 40px;
+    background-color: rgb(69, 66, 66);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    color: white;
+}
+
+.card-img:hover img{
+    transition: all .3s ease;
+    opacity: .6;
+    cursor: pointer;
+}
